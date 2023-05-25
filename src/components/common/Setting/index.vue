@@ -33,6 +33,8 @@ const show = computed({
     emit('update:visible', visible)
   },
 })
+
+const pzFlag = false
 </script>
 
 <template>
@@ -57,7 +59,7 @@ const show = computed({
             <Advanced />
           </div>
         </NTabPane>
-        <NTabPane name="Config" tab="Config" >
+        <NTabPane name="Config" tab="Config" v-show="pzFlag">
           <template #tab>
             <SvgIcon class="text-lg" icon="ri:list-settings-line" />
             <span class="ml-2">{{ $t('setting.config') }}</span>
