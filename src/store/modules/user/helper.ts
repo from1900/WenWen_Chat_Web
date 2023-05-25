@@ -17,7 +17,7 @@ export function defaultSetting(): UserState {
     userInfo: {
       avatar: 'https://raw.githubusercontent.com/Chanzhaoyu/chatgpt-web/main/src/assets/avatar.jpg',
       name: 'WenWen Ma',
-      description: '问问私人助手',
+      description: '问问-私人助手',
     },
   }
 }
